@@ -3,14 +3,19 @@ layout: default
 title: About me
 ---
 
-
-    <h2>About me!</h2>
+    <h2>{{ page.title }}</h2>
     <p>
         Raised, in Greensboro, NC, I moved to Raleigh in August 2020 to start School at NC State. I am currently
         looking for an intenship for Summer 2023, so please feel free to contact me if you have any available positions!
     </p>
-    <nav>
-        <ul>
-            <li><a href="/history">Work History</a></li>
-        </ul>
-    </nav>
+    <ul class = "jobs">
+        {% for job in site.jobs %}
+            <li>
+                {{job.title}}
+                <span>{{ job.start || date_to_string }} - {{ job.end || date_to_string }}</span>
+                <p class="desc">
+                    {{ content }}
+                </p>
+            </li>
+        {% endfor %}
+    </ul>

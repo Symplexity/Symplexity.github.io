@@ -10,10 +10,11 @@ nav ul, footer ul {
     font-weight: bold;
 }
 nav ul li, footer ul li {
-    display: inline-inline-block;
+    display: inline-block;
     margin-right: 20px;
-    border-radius: 20px
-    
+    border-radius: 20px;
+    background-color: green;
+
 }
 a {
     text-decoration: none;
