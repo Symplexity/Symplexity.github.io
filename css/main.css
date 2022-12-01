@@ -28,12 +28,16 @@ nav ul li {
     margin-right: 10px;
     height: auto;
     border-radius: 3px;
-    color: var(--darkGreen);
+
 }
 
 /* Unordered list item styling when cursor is hovering, nav bar only */
 nav ul li:hover {
     background-color: var(--darkTan);
+}
+
+nav a {
+    color: var(--darkGreen);
 }
 
 /* Footer ul list item styling */
