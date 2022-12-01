@@ -1,7 +1,15 @@
-body {
+:root {
+    --tan: #E5D9B6;
+    --lightGreen: #A4BE7B;
+    --midGreen: #5F8D4E;
+    --darkGreen: #285430;
+}
+
+
+html, body {
     margin: 60px auto;
     width: 70%;
-    background-color: #20572f
+    background-color: var(--tan);
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -9,7 +17,19 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
 }
-nav ul li, footer ul li {
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    height: auto;
+    border-radius: 3px;
+    background-color: var(--midGreen);
+}
+
+nav ul li:hover {
+    background-color: var(--lightGreen);
+}
+
+footer ul li {
     display: inline;
     margin-right: 20px;
 
@@ -21,7 +41,7 @@ a {
 a:hover {
     text-decoration: underline;
 }
-h1 {
+h1, h2, h3 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
