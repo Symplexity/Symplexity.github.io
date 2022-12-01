@@ -7,6 +7,10 @@
     --grey: #d5d5d5;
 }
 
+.featured {
+    /* Change var colors to emphasize a project */
+}
+
 /* Main body styling */
 html, body {
     margin: 30px auto;
