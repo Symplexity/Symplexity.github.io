@@ -55,6 +55,7 @@ a {
 
 /* Link hover styling */
 a:hover {
+    color: var(--darkGreen);
     text-decoration: underline;
 }
 
