@@ -1,14 +1,14 @@
 :root {
+    /* Various color variables */
     --tan: #E5D9B6;
     --darkTan: #a1987f;
     --lightGreen: #A4BE7B;
     --midGreen: #5F8D4E;
     --darkGreen: #285430;
     --grey: #d5d5d5;
-}
 
-.featured {
-    /* Change var colors to emphasize a project */
+    /* Font variables*/
+    
 }
 
 /* Main body styling */
