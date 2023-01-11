@@ -3,15 +3,18 @@
     <!--Page Header-->
 	{% include head.html %}
 	<body>
-		<nav class="head-list">
+		<nav class="navigation">
     		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-                <li><a href="/projects">Projects</a></li>
-                <li><a href="https://Symplexity.github.io/Documents/Resume.pdf">Resume</a></li>
-        		<!--<li><a href="/cv">CV</a></li>-->
-        		<!--<li><a href="/blog">Blog</a></li>-->
+        		<li><a href="/" class="nav-item">Home</a></li>
+	        	<li><a href="/about" class="nav-item">About</a></li>
+                <li><a href="/projects" class="nav-item">Projects</a></li>
+                <li><a href="https://Symplexity.github.io/Documents/Resume.pdf" class="nav-item">Resume</a></li>
+        		<!--<li><a href="/cv" class="nav-item">CV</a></li>-->
+        		<li><a href="/blog" class="nav-item">Blog</a></li>
     		</ul>
+			<button class="burger-menu" id="burger-menu">
+				<ion-icon class="bars" name="menu-outline"></ion-icon>
+			</button>
 		</nav>
 		<div class="container">
 
