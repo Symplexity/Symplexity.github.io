@@ -16,9 +16,12 @@
 
 /* Main body styling */
 html, body {
+    background-color: var(--tan);
+}
+
+* {
     margin: 30px auto;
     width: 70%;
-    background-color: var(--tan);
 }
 
 nav {
