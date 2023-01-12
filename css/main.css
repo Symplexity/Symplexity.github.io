@@ -14,18 +14,18 @@
     --bolder-font: 900;
 }
 
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} */
 
 html {
     background-color: var(--tan);
 }
 
-/* Main body styling */
-body {
+/* Container class styling */
+.cointainer {
     margin: 30px auto;
     width: 70%;
     background-color: var(--tan);
@@ -41,7 +41,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 3.5 rem;
+    padding: 1.5rem 3.5rem;
     background-color: var(--tan);
     box-shadow: 0 3px 5px var(--darkTan);
 
