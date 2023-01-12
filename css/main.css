@@ -22,6 +22,7 @@ html, body {
 * {
     margin: 30px auto;
     width: 70%;
+    box-sizing: border-box;
 }
 
 nav {
@@ -32,6 +33,7 @@ nav {
     left: 0;
     z-index: 1; /* keeps the nav bar ontop of other elements */
     display: flex;
+    background-color: var(--tan);
     box-shadow: 0 3px 5px var(--darkTan);
 
 }
