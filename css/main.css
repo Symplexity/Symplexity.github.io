@@ -16,24 +16,20 @@
 
 /* Main body styling */
 html, body {
+    margin: 30px auto;
+    width: 70%;
     background-color: var(--tan);
 }
 
-* {
-    margin: 30px auto;
-    width: 70%;
-    box-sizing: border-box;
-}
-
 nav {
-    margin: 0%;
-    width: 100%;
     position: sticky;
     top: 0;
     left: 0;
     z-index: 1; /* keeps the nav bar ontop of other elements */
     display: flex;
-    background-color: var(--tan);
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5 rem;
     box-shadow: 0 3px 5px var(--darkTan);
 
 }
