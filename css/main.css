@@ -21,6 +21,7 @@ html, body {
     background-color: var(--tan);
 }
 
+/* Nav bar styling */
 nav {
     position: sticky;
     top: 0;
@@ -30,6 +31,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5 rem;
+    background-color: var(--tan);
     box-shadow: 0 3px 5px var(--darkTan);
 
 }
