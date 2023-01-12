@@ -8,7 +8,10 @@
     --grey: #d5d5d5;
 
     /* Font variables*/
-    
+    --font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    --normal-font: 400;
+    --bold-font: 700;
+    --bolder-font: 900;
 }
 
 /* Main body styling */
@@ -18,9 +21,18 @@ html, body {
     background-color: var(--tan);
 }
 
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1; /* keeps the nav bar ontop of other elements */
+    box-shadow: 0 3px 5px var(--darkTan);
+
+}
+
 /* Unordered list styling */
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: var(--font-family);
     padding: 0px;
     list-style: none;
     font-weight: bold;
