@@ -1,7 +1,7 @@
 :root {
     /* Various color variables */
-    --tan: #E5D9B6;
-    --darkTan: #a1987f;
+    --primary-color: #E5D9B6;
+    --secondary-color: #a1987f;
     --lightGreen: #A4BE7B;
     --midGreen: #5F8D4E;
     --darkGreen: #285430;
@@ -21,14 +21,15 @@
 } */
 
 html {
-    background-color: var(--tan);
+    background-color: var(--primary-color);
+    scroll-behavior: smooth;
 }
 
 /* Container class styling */
 .cointainer {
     margin: 30px auto;
     width: 70%;
-    background-color: var(--tan);
+    background-color: var(--primary-color);
 }
 
 /* Nav bar styling */
@@ -42,8 +43,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--tan);
-    box-shadow: 0 3px 5px var(--darkTan);
+    background-color: var(--primary-color);
+    box-shadow: 0 3px 5px var(--secondary-color);
 
 }
 
@@ -66,11 +67,20 @@ nav ul li {
 
 /* Styling for hovering over nav bar links */
 nav a:hover {
-    background-color: var(--darkTan);
+    background-color: var(--secondary-color);
 }
 
 nav a {
     color: var(--darkGreen);
+}
+
+.burger-menu {
+    color: var(--primary-color);
+    font-size: 2rem;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
 }
 
 /* Footer ul list item styling */
