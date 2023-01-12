@@ -17,7 +17,7 @@
 /* Main body styling */
 html, body {
     margin: 30px auto;
-    width: 70%;
+    width: 100%;
     background-color: var(--tan);
 }
 
