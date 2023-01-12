@@ -14,6 +14,12 @@
     --bolder-font: 900;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
     background-color: var(--tan);
 }
@@ -27,6 +33,7 @@ body {
 
 /* Nav bar styling */
 nav {
+    margin: -30px;
     position: sticky;
     top: 0;
     left: 0;
