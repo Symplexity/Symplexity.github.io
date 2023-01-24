@@ -240,3 +240,11 @@ ul.posts li {
     width: 11.875rem;
     height: 11.25rem;
 }
+
+.icon-card {
+    background-color: var(--primary-bg-color);
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+}
