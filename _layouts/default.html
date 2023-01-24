@@ -1,43 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <!--Page Header-->
-	{% include head.html %}
-	<body>
-		<nav class="navigation">
-    		<ul>
-        		<li><a href="/" class="nav-item">Home</a></li>
-	        	<li><a href="/about" class="nav-item">About</a></li>
-                <li><a href="/projects" class="nav-item">Projects</a></li>
-                <li><a href="https://Symplexity.github.io/Documents/Resume.pdf" class="nav-item">Resume</a></li>
-        		<!--<li><a href="/cv" class="nav-item">CV</a></li>-->
-        		<li><a href="/blog" class="nav-item">Blog</a></li>
-    		</ul>
-			<button class="burger-menu" id="burger-menu">
-				<ion-icon class="bars" name="menu-outline"></ion-icon>
-			</button>
-		</nav>
-		<div class="container">
+<!--Page Header-->
+{% include head.html %}
 
-    		{{ content }}
+<body>
 
-		</div><!-- /.container -->
-		<footer>
-            <h3>Contact Me</h3>
-    		<ul>
-        		<li><a href="mailto:rbjoncas@ncsu.edu">Email me!</a></li>
-                <li><a href="https://www.linkedin.com/in/riley-joncas/">LinkedIn</a></li>
-        		<li><a href="https://github.com/Symplexity">github.com/Symplexity</a></li>
-			</ul>
-		</footer>
+    {% include nav.html %}
 
-		<!-- Ion Icon Scripts -->
-		<script
-			type="module"
-			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-	  	></script>
-		<script
-			nomodule
-			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-	  	></script>
-	</body>
+    <div class="container">
+
+        {{ content }}
+
+    </div><!-- /.container -->
+
+    {% include foot.html %}
+
+    <!-- Ion Icon Scripts -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
 </html>

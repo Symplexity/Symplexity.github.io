@@ -1,55 +1,87 @@
 :root {
     /* Various color variables */
-    --primary-color: #E5D9B6;
-    --secondary-color: #a1987f;
+    --primary-bg-color: #E5D9B6;
+    --secondary-bg-color: #dccfad;
+    --bg-color: #fcfcfc;
     --lightGreen: #A4BE7B;
     --midGreen: #5F8D4E;
     --darkGreen: #285430;
     --grey: #d5d5d5;
+    --primary-shadow: #8b8eaf;
+    --secondary-shadow: #a17a69;
+
 
     /* Font variables*/
-    --font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    --font-family: 'Helvetica', 'Arial', 'Sans-Serif';
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
+    --body-font-size: 1.3rem;
+
+    /* Margin variables */
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+
+    /* Transition variables */
+    --transition: 0.3s;
+
+
 }
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
 html {
-    background-color: var(--primary-color);
+    background-color: var(--primary-bg-color);
     scroll-behavior: smooth;
 }
 
-/* Container class styling */
-.cointainer {
-    margin: 30px auto;
-    width: 70%;
-    background-color: var(--primary-color);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Hyperlink styling */
+a {
+    text-decoration: none;
+    color: #999;
+}
+
+/* Link hover styling */
+a:hover {
+    color: var(--darkGreen);
+    text-decoration-color: var(--darkGreen);
+    text-decoration: underline;
+}
+
+body {
+    font-family: var(--font-family);
 }
 
 /* Nav bar styling */
 nav {
-    margin: -30px;
+    margin: 0px;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 1; /* keeps the nav bar ontop of other elements */
+    z-index: 0;
+    /* keeps the nav bar on top of other elements */
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--primary-color);
-    box-shadow: 0 3px 5px var(--secondary-color);
+    background-color: var(--primary-bg-color);
+    box-shadow: 0 3px 5px var(--secondary-bg-color);
 
 }
 
 /* Unordered list styling */
-nav ul, footer ul {
+nav ul,
+footer ul {
     font-family: var(--font-family);
     padding: 0px;
     list-style: none;
@@ -58,7 +90,7 @@ nav ul, footer ul {
 
 nav ul {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 /* Unordered list item styling, nav bar only */
@@ -72,8 +104,8 @@ nav ul li {
 
 /* Styling for hovering over nav bar links */
 nav a:hover {
-    transition: 0.2s;
-    background-color: var(--secondary-color);
+    transition: var(--transition);
+    background-color: var(--secondary-bg-color);
     border-radius: 3px;
 }
 
@@ -82,7 +114,7 @@ nav a {
 }
 
 .burger-menu {
-    color: var(--primary-color);
+    color: var(--primary-bg-color);
     font-size: 2rem;
     border: 0;
     background-color: transparent;
@@ -97,23 +129,11 @@ footer ul li {
 
 }
 
-/* Hypelink styling */
-a {
-    text-decoration: none;
-    color: #999;
-}
-
-/* Link hover styling */
-a:hover {
+/* Header 1 in nav styling */
+nav h1 {
     color: var(--darkGreen);
-    text-decoration-color: var(--darkGreen);
-    text-decoration: underline;
-}
-
-/* Hearder 1-3 styling */
-h1, h2, h3 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: 'Helvetica', 'Arial', 'Sans-Serif';
 }
 
 /* Paragraph styling */
@@ -129,6 +149,16 @@ footer {
     font-size: .8em;
 }
 
+footer p {
+    font-size: 0.75rem;
+}
+
+footer p a {
+    color: var(--darkGreen);
+
+}
+
+
 /*  */
 ul.posts {
     margin: 20px auto 40px;
@@ -138,4 +168,55 @@ ul.posts {
 /*  */
 ul.posts li {
     list-style: none;
+}
+
+.hero {
+    margin: 30px auto;
+    width: 70%;
+    background-color: var(--primary-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;
+}
+
+.hero img {
+    height: 37.5rem;
+    width: 37.5rem;
+}
+
+.bio {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.bio h1 {
+    margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+    font-size: var(--body-font-size);
+}
+
+.more-about {
+    margin-top: 30px;
+    background-color: var(--secondary-bg-color);
+    padding: 1rem 6rem;
+}
+
+.more-about h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+
+.more-about p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+    font-size: var(--body-font-size);
 }
