@@ -2,5 +2,10 @@ name: Riley Joncas, Mechanical Engineering Student
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
 
+
+collections:
+    projects:
+        output: true
+
 plugins: 
     - jekyll-feed
