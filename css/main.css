@@ -454,7 +454,16 @@ ul.posts li {
 }
 
 .about-text {
-    align-items: center;
-    width: 70%;
-    text-align: center;
+    display: block;
+    text-align: center;    
+}
+
+.about-text p {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.about-text-foot p {
+    font-size: .75rem;
+
 }
