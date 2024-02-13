@@ -229,6 +229,7 @@ ul.posts li {
     line-height: var(--line-height);
     padding: 0.4rem;
     font-size: var(--body-font-size);
+    text-align: center;
 }
 
 .skills {
